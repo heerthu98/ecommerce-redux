@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1150px;
+  margin: auto;
+}
+.main {
+  margin-top: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.category {
+  margin: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.brandItem {
+  text-decoration: none;
+  color: rgb(23, 55, 93);
+  /* margin-right: 20px; */
+}
+
+.brandItem.selected,
+.brandItem:hover {
+  color: red;
+}
+.categoryItem {
+  text-decoration: none;
+  color: rgb(23, 55, 93);
+  /* margin-right: 20px; */
+}
+
+.categoryItem.selected,
+.categoryItem:hover {
+  color: red;
+}
+
+.heroContainer {
+  display: flex;
+  height: 550px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.carousel .control-arrow:before {
+  line-height: 30px;
+}
+
+.carousel .control-prev.control-arrow:before {
+  content: "<";
+}
+
+.carousel .control-next.control-arrow:before {
+  content: ">";
+}
