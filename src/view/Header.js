@@ -36,7 +36,15 @@ function Header() {
   };
   return (
     <>
-      <div style={{ backgroundColor: "#1976d2", color: "#fff" }}>
+      <div
+        style={{
+          backgroundColor: "#1976d2",
+          color: "#fff",
+          position: "sticky",
+          top: "0",
+          zIndex: "1",
+        }}
+      >
         <div className="container">
           <div className="header">
             <div className="logo">
