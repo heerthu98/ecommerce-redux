@@ -5,10 +5,9 @@ import { useSelector } from "react-redux";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
-import BrandModel from "../models/BrandModel";
 
 function Header() {
-  const [addModal, setAddModal] = useState(false);
+  // const [addModal, setAddModal] = useState(false);
   const cartProducts = useSelector((state) => state.cart);
 
   const [selectedLink, setSelectedLink] = useState(null);
@@ -211,7 +210,7 @@ function Header() {
           </Carousel>
         </div>
       </div>
-      <BrandModel openModal={addModal} closeModal={() => setAddModal(false)} />
+      {/* <BrandModel openModal={addModal} closeModal={() => setAddModal(false)} /> */}
     </>
   );
 }
